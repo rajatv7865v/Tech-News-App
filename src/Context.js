@@ -13,9 +13,8 @@ const initialState = {
 
 const AppContext = React.createContext();
 
-// to create a provider fucntion
+
 const AppProvider = ({ children }) => {
-  // const [state, setstate] = useState(initialState);
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -33,7 +32,6 @@ const AppProvider = ({ children }) => {
           nbPages: data.nbPages,
         },
       });
-      // isLoading = false;
     } catch (error) {
       console.log(error);
     }
