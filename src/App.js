@@ -1,4 +1,3 @@
-
 import './App.css';
 import Pagination from './Pagination';
 import Seaarch from './Seaarch';
